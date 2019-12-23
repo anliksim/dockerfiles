@@ -18,7 +18,7 @@ elif [ ! "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
     -e "DISPLAY=unix${DISPLAY}" \
     -v /dev/snd:/dev/snd --privileged \
     --name $CONTAINER_NAME \
-    ff07f18d921b
+    anliksim/spotify:ubuntu1.0
 
 else
   echo "A container with the name $CONTAINER_NAME is already running"
